@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'yi@x%v&76udt6sp4x83!ovbi+c!$2a-j^&@cp7#&ukvh9gt*-%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'yimo.pro', '47.110.252.66']
 
 
 # Application definition
@@ -127,3 +127,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# 发布配置static
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
