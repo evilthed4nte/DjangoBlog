@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="043c7b36-d45d-4994-bce6-b9234f8a0ead" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/YimoBlogProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/YimoBlogProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,8 +77,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YimoBlogProject/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+            <state relative-caret-position="15">
+              <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -257,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550829083872</updated>
-      <workItem from="1550829085250" duration="12720000" />
+      <workItem from="1550829085250" duration="13483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12720000" />
+    <option name="totallyTimeSpent" value="13483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,10 +441,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YimoBlogProject/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="69" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
+        <state relative-caret-position="15">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
