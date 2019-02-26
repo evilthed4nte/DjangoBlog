@@ -26,7 +26,7 @@ SECRET_KEY = 'yi@x%v&76udt6sp4x83!ovbi+c!$2a-j^&@cp7#&ukvh9gt*-%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'yimo.pro', '47.110.252.66']
+ALLOWED_HOSTS = ['0.0.0.0:8000', '127.0.0.1', 'localhost', 'yimo.pro', '47.110.252.66']
 
 
 # Application definition
