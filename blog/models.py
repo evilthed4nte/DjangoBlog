@@ -36,7 +36,7 @@ class Article(models.Model):
     # 新增 views 字段记录阅读量
     # views = models.PositiveIntegerField(default=0)
     # 分类
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=False)
     # 标签
     tags = models.ManyToManyField(Tag, blank=True)
     # 作者
