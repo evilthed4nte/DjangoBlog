@@ -1,8 +1,9 @@
 # coding=utf-8
-
+import markdown
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+from django.utils.html import strip_tags
 
 
 class Category(models.Model):
@@ -49,4 +50,15 @@ class Article(models.Model):
     # 记得从 django.urls 中导入 reverse 函数
     def get_absolute_url(self):
         return reverse('blog:reverse_article_url', kwargs={'pk': self.pk})
+
+    def save(self, *args, **kwargs):
+        if not self.excerpt:
+            md = markdown.Markdown(extensions=[
+                'markdown.extensions.extra',
+                'markdown.extensions.codehilite',
+            ])
+            self.excerpt = strip_tags(md.convert(self.body))[:54]
+
+        # 调用父类的 save 方法将数据保存到数据库中
+        super(Article, self).save(*args, **kwargs)
 
