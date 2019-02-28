@@ -1,5 +1,5 @@
 # coding=utf-8
-import markdown
+
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
@@ -53,6 +53,7 @@ class Article(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.excerpt:
+            import markdown
             md = markdown.Markdown(extensions=[
                 'markdown.extensions.extra',
                 'markdown.extensions.codehilite',
