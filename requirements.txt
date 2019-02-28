@@ -1,3 +1,5 @@
+markdown
+django
 altgraph==0.16.1
 asn1crypto==0.24.0
 attrs==18.2.0
@@ -14,7 +16,6 @@ idna==2.8
 incremental==17.5.0
 lxml==4.3.1
 macholib==1.11
-Markdown==3.0.1
 parsel==1.5.1
 pefile==2018.8.8
 pyasn1==0.4.5
