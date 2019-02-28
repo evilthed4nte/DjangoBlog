@@ -4,7 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
 
 from blog.models import Article, Category, Tag
-import markdown
+import
 
 
 # def index(request):
@@ -58,6 +58,7 @@ class TagView(ListView):
 # 文章详情
 def article(request, pk):
     article_detail = get_object_or_404(Article, pk=pk)
+    import markdown
     article_detail.body = markdown.markdown(article_detail.body, extensions=[
         'markdown.extensions.extra',
         'markdown.extensions.codehilite',
