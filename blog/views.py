@@ -1,11 +1,5 @@
-import calendar
-import datetime
-
 from django.shortcuts import render, get_object_or_404
-
-# Create your views here.
 from django.views.generic import ListView
-
 from blog.models import Article, Category, Tag
 
 
@@ -22,10 +16,10 @@ class IndexView(ListView):
 
 
 # 分类详情页
-class CategoryView(ListView):
-    model = Category
-    template_name = 'blog/index.html'
-    context_object_name = 'article_list'
+class CategoryView(IndexView):
+    # model = Category
+    # template_name = 'blog/index.html'
+    # context_object_name = 'article_list'
 
     def get_queryset(self):
         cate = get_object_or_404(Category, pk=self.kwargs.get('pk'))
