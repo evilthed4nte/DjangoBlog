@@ -39,21 +39,21 @@ class ArchivesView(ListView):
     template_name = 'blog/index.html'
     context_object_name = 'article_list'
 
-    # def get_queryset(self):
-    #     year = self.kwargs.get('year')
-    #     month = self.kwargs.get('month')
-    #     return super(ArchivesView, self).get_queryset().filter(created_time__year=year,
-    #                                                            created_time__month=month)
-
     def get_queryset(self):
         year = self.kwargs.get('year')
         month = self.kwargs.get('month')
-        monthrange = calendar.monthrange(int(year), int(month))
-        article_list = super(ArchivesView, self).get_queryset().filter(
-            created_time__range=(
-                datetime.date(int(year), int(month), 1),
-                datetime.date(int(year), int(month), monthrange[1])))
-        return article_list
+        return super(ArchivesView, self).get_queryset().filter(created_time__year=year,
+                                                               created_time__month=month)
+
+    # def get_queryset(self):
+    #     year = self.kwargs.get('year')
+    #     month = self.kwargs.get('month')
+    #     monthrange = calendar.monthrange(int(year), int(month))
+    #     article_list = super(ArchivesView, self).get_queryset().filter(
+    #         created_time__range=(
+    #             datetime.date(int(year), int(month), 1),
+    #             datetime.date(int(year), int(month), monthrange[1])))
+    #     return article_list
 
 
 # 标签页
