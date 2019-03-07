@@ -5,6 +5,12 @@ from blog.models import Article, Category, Tag
 
 def shuven(request):
     shuven = Article.objects.get(pk=11)
+    import markdown
+    shuven.body = markdown.markdown(shuven.body, extensions=[
+        'markdown.extensions.extra',
+        'markdown.extensions.codehilite',
+        'markdown.extensions.toc',
+    ])
     return render(request, 'blog/index-s.html', context={
         'shuven': shuven
     })
