@@ -3,11 +3,13 @@ from django.views.generic import ListView
 from blog.models import Article, Category, Tag
 
 
-# def index(request):
-#     article_list = Article.objects.all().order_by('-created_time')
-#     return render(request, 'blog/index.html', context={
-#         'article_list': article_list
-#     })
+def shuven(request):
+    shuven = Article.objects.get(pk=11)
+    return render(request, 'blog/index-s.html', context={
+        'shuven': shuven
+    })
+
+
 # 类视图
 class IndexView(ListView):
     model = Article
