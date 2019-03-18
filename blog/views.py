@@ -7,10 +7,11 @@ class IndexView(ListView):
     model = Article
     template_name = 'blog/index.html'
     context_object_name = 'article_list'
-
-    # 以10为分页 某种不知名的力量...
-    paginate_by = 5
-
+    # 以7为分页 某种不知名的力量...
+    paginate_by = 7
+    def get_queryset(self):
+        # 保证有序 分页要求
+        return super(IndexView, self).get_queryset().order_by('-created_time')
 
 # 分类详情页 继承IndexView
 class CategoryView(IndexView):
