@@ -7,10 +7,9 @@
                 <a href="{{ article.get_absolute_url }}">{{ article.title }}</a>
             </h1>
             <div class="entry-meta">
-                <span class="post-category"><a href="{{ article.get_absolute_url }}">{{ article.title }}</a></span>
-                <span class="post-date"><a href="{{ article.get_absolute_url }}"><time class="entry-date"></time></a></span>
+                <span class="post-category"><a href="{{ article.get_absolute_url }}">{{ article.category }}</a></span>
+                <span class="post-date"><a href="{{ article.get_absolute_url }}"><time class="entry-date">{{ article.created_time }}</time></a></span>
                 <span class="post-author"><a href="#">{{ article.author }}</a></span>
-{#                <span class="comments-link"><a href="#">4 评论</a></span>#}
 {#                <span class="views-count"><a href="#">588 阅读</a></span>#}
             </div>
         </header>
