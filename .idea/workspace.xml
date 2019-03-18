@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="043c7b36-d45d-4994-bce6-b9234f8a0ead" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/blog/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="25" selection-start-line="25" selection-end-line="35" selection-end-column="15" />
+            <state relative-caret-position="300">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -243,12 +242,12 @@
       <workItem from="1551314082817" duration="10784000" />
       <workItem from="1551759727612" duration="5569000" />
       <workItem from="1551941371985" duration="1186000" />
-      <workItem from="1552869950960" duration="3347000" />
+      <workItem from="1552869950960" duration="3555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38121000" />
+    <option name="totallyTimeSpent" value="38329000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,8 +436,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="25" selection-start-line="25" selection-end-line="35" selection-end-column="15" />
+        <state relative-caret-position="300">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

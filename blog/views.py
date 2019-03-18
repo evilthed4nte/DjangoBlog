@@ -9,7 +9,7 @@ class IndexView(ListView):
     context_object_name = 'article_list'
 
     # 以10为分页 某种不知名的力量...
-    paginate_by = 7
+    paginate_by = 5
 
 
 # 分类详情页 继承IndexView
