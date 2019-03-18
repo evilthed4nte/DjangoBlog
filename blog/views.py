@@ -65,7 +65,18 @@ def article(request, pk):
         'article_detail': article_detail
     })
 
+# 简单搜索
+def search(request):
+    querystring = request.GET.get('querystring')
+    error_msg = ''
 
+    if not querystring:
+        error_msg = '请输入关键词'
+        return render(request, 'blog/index.html', {'error_msg': error_msg})
+
+    article_list = Article.objects.filter(title__icontains=querystring)
+    return render(request, 'blog/index.html', {'error_msg': error_msg,
+                                               'article_list': article_list})
 
 
 
