@@ -131,3 +131,5 @@ USE_TZ = False
 STATIC_URL = '/static/'
 # 发布配置static
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# git reset test 1
